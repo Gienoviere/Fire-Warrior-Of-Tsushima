@@ -19,17 +19,17 @@ public class WarriorAttack : MonoBehaviour
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.J))
             {
                 Attack1();
                 nextAttackTime = Time.time + 1f / attackRate;
             }
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKeyDown(KeyCode.K))
             {
                 Attack2();
                 nextAttackTime = Time.time + 1f / attackRate;
             }
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.L))
             {
                 Attack3();
                 nextAttackTime = Time.time + 1f / attackRate;

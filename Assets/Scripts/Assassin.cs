@@ -93,12 +93,13 @@ public class Assassin : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             
             animator.SetTrigger("Attack");
             playerHealth.TakeDamage(damage);
         }
+        
         else
         {
             animator.SetBool("IsAttacking", false);
